@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using API.Dtos;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace API.Services
 {
@@ -38,6 +40,7 @@ namespace API.Services
             }
         }
 
+     
         public string GetUserByConnectionId(string connectionId)
         {
             lock (Users)
